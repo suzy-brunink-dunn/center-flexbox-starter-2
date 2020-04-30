@@ -97,13 +97,27 @@ textarea {
 
 /*Large Background Image*/
 html {
-    background: url(../img/bkgd2.jpg) no-repeat center center fixed;
+    background: url(../img/simon-matzinger-twukN12EN7c-unsplash.jpg) no-repeat center center fixed;
     background-size: cover;
-   height: 100%;
+    height: 100%;
 }
 
 body {
     height: 100%;
+}
+
+body:before { 
+    background-color: rgba(192, 192, 192, .55);
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+  
+body * {
+    position: relative; 
 }
 
 .wrapper {
@@ -118,24 +132,25 @@ body {
 #content {
     align-items: center;
     background: #222;
-    background:rgba(0,0,0,0.7);
-    color: #fff;
+    background: rgba(255, 140, 0, .45);
+    -webkit-box-shadow: 5px 5px 15px 31px rgba(255, 140, 0, 0.5); 
+    box-shadow: 5px 5px 15px 31px rgba(255, 140, 0, 0.5);
+    color: #000;
     display: flex;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
-    font-size: 1.25em;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 600;
+    font-size: 2em;
     justify-content: center;
     line-height: 1.5em;
-    border-radius: 10px;
-    padding: 0px 30px;
-    width: 300px;
-    height: 300px;
+    border-radius: 50%;
+    padding: 0px 60px;
+    width: 450px;
+    height: 550px;
 }
 
-#content p span {
-    font-family: 'Lora', sans-serif;
+#content span {
+    font-size: 2.3em;
 }
-
 
 
 
